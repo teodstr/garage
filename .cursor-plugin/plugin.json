@@ -1,0 +1,11 @@
+{
+  "name": "garage",
+  "displayName": "Garage",
+  "description": "Startup skills for AI agents: idea validation, customer interviews, desk research, MVP scoping, brand identity, landing pages, prototype tests, pitch decks, funding, support programs, legal setup, first customers and financial forecasts. Works in English, French and Spanish.",
+  "version": "0.1.0",
+  "author": {
+    "name": "teodstr",
+    "url": "https://github.com/teodstr"
+  },
+  "skills": "./skills/"
+}

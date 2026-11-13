@@ -1,0 +1,47 @@
+name: New skill
+description: Propose a skill that would help founders.
+title: "New skill: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Please check the [roadmap](https://github.com/teodstr/garage/blob/main/ROADMAP.md) and the open issues first, so that two people don't write the same skill.
+  - type: input
+    id: idea
+    attributes:
+      label: What should the skill help founders do?
+      description: One sentence, starting with a verb.
+      placeholder: "Run a pricing experiment before launch"
+    validations:
+      required: true
+  - type: input
+    id: skill-name
+    attributes:
+      label: Proposed skill name
+      description: In kebab-case. It becomes the folder name, `skills/<skill-name>/`.
+      placeholder: "pricing-experiments"
+  - type: textarea
+    id: use-case
+    attributes:
+      label: When would a founder use it?
+      description: The situations where this skill is the right tool, and what it adds to the existing skills.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Books, articles or official pages that anyone can check (authors, year, title, publisher, or the link of the official page).
+    validations:
+      required: true
+  - type: dropdown
+    id: author
+    attributes:
+      label: Do you want to write this skill?
+      options:
+        - Yes, I'd like to write it
+        - I can help (sources, terminology, review)
+        - No, I'm only suggesting it
+    validations:
+      required: true

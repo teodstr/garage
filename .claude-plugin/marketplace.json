@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "garage",
+  "description": "Startup skills for AI agents, from the first idea to the first customers.",
+  "owner": {
+    "name": "teodstr",
+    "url": "https://github.com/teodstr"
+  },
+  "plugins": [
+    {
+      "name": "garage",
+      "description": "Validate an idea, research a market, design an MVP, a brand and a landing page, find funding and support, and win the first customers. In English, French and Spanish.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+__pycache__/
+
+# Local handoff notes, not part of the project
+HANDOFF.md

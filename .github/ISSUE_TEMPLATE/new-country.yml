@@ -1,0 +1,41 @@
+name: Add a country
+description: Add the official places to check for funding, support programs or legal setup in a country.
+title: "Country: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! The skills `funding-options`, `support-programs` and `legal-setup` cover France and Spain in detail. You can help founders in your country by adding the official places to check. Use official or primary sources only, and don't write amounts or thresholds in the skill: they change, so the agent looks them up during the conversation.
+  - type: input
+    id: country
+    attributes:
+      label: Country or region
+      placeholder: "Belgium, Québec, Mexico…"
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: What can you add?
+      options:
+        - label: Funding programs (funding-options)
+        - label: Support programs, incubators, networks (support-programs)
+        - label: Legal structures and first steps (legal-setup)
+  - type: textarea
+    id: sources
+    attributes:
+      label: Official sources
+      description: The agencies and portals to check, each with its link.
+    validations:
+      required: true
+  - type: dropdown
+    id: author
+    attributes:
+      label: Do you want to write it?
+      options:
+        - Yes, I'd like to write it
+        - I can review it
+        - No, I'm only suggesting it
+    validations:
+      required: true

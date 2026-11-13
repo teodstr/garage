@@ -1,0 +1,62 @@
+name: Weak output
+description: A skill gave an answer that was generic, wrong, outdated or badly sourced.
+title: "Weak output: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Reports like this one are how the skills get better. Before you post, remove anything confidential from your prompt and from the answer (your idea, names, numbers).
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: The skill that was used, or that should have been used. Leave it empty if you're not sure.
+      placeholder: "idea-validation"
+  - type: input
+    id: agent
+    attributes:
+      label: Agent
+      description: The tool you used, and the model if you know it.
+      placeholder: "Claude Code, Codex, Cursor…"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the conversation
+      options:
+        - English
+        - Français
+        - Español
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Your prompt
+      description: Paste the exact prompt you used.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: What the agent produced
+      description: Paste the answer, or the part that is weak.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What a good answer would have done
+      description: For example, test the riskiest assumption first, check a grant on its official page, give the date of a rule, or use the right French or Spanish term.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confidential
+    attributes:
+      label: Before you submit
+      options:
+        - label: I removed any confidential information from the prompt and the answer.
+          required: true
