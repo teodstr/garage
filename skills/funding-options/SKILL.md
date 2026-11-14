@@ -4,12 +4,16 @@ description: >
   Map the funding options that fit a project's stage, country and founder profile
   (savings and friends and family, grants and public aid, honor loans, bank loans,
   crowdfunding, business angels, venture capital), check their current conditions
-  on official pages, and plan the applications with documents and dates. Use when
-  a founder asks how to finance a project, which grants or loans exist, or whether
-  to raise money. Not financial advice. Triggers: "funding", "grants", "startup
-  loan", "raise money", "investors", "financement", "aides à la création",
-  "subventions", "prêt d'honneur", "lever des fonds", "financiación", "ayudas para
-  emprender", "subvenciones", "préstamo participativo".
+  on official pages, and plan the applications. Use this skill whenever someone
+  asks which grants, aid, subsidies, loans or investors exist to start or grow a
+  business in a country, region or city (for example "what aid is there for
+  startups in Madrid?"), even when the question looks simple: these programs
+  change often, so the answer must come from official pages checked today, not
+  from memory. Not financial advice. Triggers: "funding", "grants", "startup
+  loan", "raise money", "investors", "financement", "quelles aides", "aides à la
+  création", "subventions", "prêt d'honneur", "lever des fonds", "financiación",
+  "qué ayudas hay", "ayudas para emprender", "ayudas para startups",
+  "subvenciones", "préstamo participativo".
 ---
 
 # Funding options
